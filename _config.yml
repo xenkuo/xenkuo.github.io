@@ -21,17 +21,16 @@ description: comNG ...
 # List of links in the navigation bar
 navbar-links:
   comNG:
-    - Introduction: '2019-08-01-comNG'
-    - Licence & Buy: '2019-08-02-comNG-licence-buy'
-    - comNGLang: '2019-08-03-comNGLang'
+    - Introduction: "2019-08-01-comNG"
+    - comNGLang: "2019-08-03-comNGLang"
   Highlight 7:
-    - Introduction: '2019-01-01-Highlight-7'
-  Donation: '2020-01-01-donation'
-  About Me: 'aboutme'
+    - Introduction: "2019-01-01-Highlight-7"
+  Donation: "2020-01-01-donation"
+  About Me: "aboutme"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: '/img/avatar-icon.png'
+avatar: "/img/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -41,15 +40,15 @@ avatar: '/img/avatar-icon.png'
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: '#F5F5F5'
-navbar-text-col: '#26a69a'
-navbar-children-col: '#F5F5F5'
-page-col: '#FFFFFF'
-link-col: '#008AFF'
-hover-col: '#0085A1'
-footer-col: '#F5F5F5'
-footer-text-col: '#777777'
-footer-link-col: '#26a69a'
+navbar-col: "#F5F5F5"
+navbar-text-col: "#26a69a"
+navbar-children-col: "#F5F5F5"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#26a69a"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -71,7 +70,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   # rss: true
-  email: 'xenkuo@163.com'
+  email: "xenkuo@163.com"
   # facebook: deanattali
   github: xenkuo
   # twitter: xenkuo
@@ -96,7 +95,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: 'xenkuo.github.io' # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "xenkuo.github.io" # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -151,15 +150,15 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: '-'
+title-separator: "-"
 
 # Ruby Date Format
-date_format: '%B %-d, %Y'
+date_format: "%B %-d, %Y"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: 'America/Vancouver'
+timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -171,16 +170,16 @@ kramdown:
 # Default YAML values (more information on Jekyll's site)
 defaults:
   - scope:
-      path: ''
-      type: 'posts'
+      path: ""
+      type: "posts"
     values:
-      layout: 'post'
+      layout: "post"
       comments: true # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   - scope:
-      path: '' # all files
+      path: "" # all files
     values:
-      layout: 'page'
+      layout: "page"
       show-avatar: true
 
 # Use tags index page and make tags on each post clickable
@@ -199,8 +198,8 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
+  rooturl: "_posts"
+  media: "img"
   ignore:
     - 404.html
     - LICENSE
@@ -213,41 +212,41 @@ prose:
     - /js
   metadata:
     _posts:
-      - name: 'layout'
+      - name: "layout"
         field:
-          element: 'hidden'
-          value: 'post'
-      - name: 'title'
+          element: "hidden"
+          value: "post"
+      - name: "title"
         field:
-          element: 'text'
-          label: 'Post title'
-          placeholder: 'Title'
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
           alterable: true
-      - name: 'subtitle'
+      - name: "subtitle"
         field:
-          element: 'textarea'
-          label: 'Subtitle'
-          placeholder: 'A description of your post.'
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
           alterable: true
-      - name: 'date'
+      - name: "date"
         field:
-          element: 'text'
-          label: 'Date'
-          help: 'Enter date of post.'
-          placeholder: 'yyyy-mm-dd'
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
           alterable: true
-      - name: 'image'
+      - name: "image"
         field:
-          element: 'text'
-          label: 'Image'
-          help: 'Add a thumbnail image to your post.'
-          placeholder: 'Thumbnail'
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
           alterable: true
-      - name: 'published'
+      - name: "published"
         field:
-          element: 'checkbox'
-          label: 'Publish'
-          help: 'Check to publish post, uncheck to hide.'
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
 
 plugins:
   - jekyll-paginate
