@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Xen Tools
+title: Xenkuo Industry
 
 # Short description of your site
-description: Desktop tools for engineers and power users
+description: Engineering tools for IoT and embedded developers
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: WiFi Manner
-subtitle: Live and offline Wi-Fi analysis for Windows
+subtitle: Wireless validation for IoT and embedded products
 css:
   - "/css/apps.css"
 permalink: /apps/wifimanner/
@@ -10,11 +10,10 @@ permalink: /apps/wifimanner/
 <main class="detail-page">
   <section class="detail-hero wifi-detail">
     <div>
-      <p class="eyebrow">Wi-Fi analysis · Windows</p>
+      <p class="eyebrow">Wireless analysis · IoT engineering · Windows</p>
       <h1>See the connection.<br>Understand the traffic.</h1>
-      <p>Explore nearby networks in real time and analyze captured Wi-Fi activity,
-      device lifecycles, and protocol timelines offline.</p>
-      <a class="button-primary" href="https://github.com/xenkuo/wifimanner" target="_blank" rel="noopener">View source</a>
+      <p>Validate embedded Wi-Fi devices in real time and analyze captured
+      network activity, connection lifecycles, and protocol timelines offline.</p>
     </div>
     <div class="wifi-detail-mock">
       <div class="wifi-toolbar"><span class="wifi-dot"></span><strong>WiFi Manner</strong></div>

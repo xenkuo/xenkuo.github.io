@@ -1,7 +1,7 @@
 ---
 layout: page
 title: comNG
-subtitle: A modern serial communication workbench
+subtitle: Serial debugging for embedded and industrial systems
 css:
   - "/css/apps.css"
 permalink: /apps/comng-pro/
@@ -10,11 +10,10 @@ permalink: /apps/comng-pro/
 <main class="detail-page">
   <section class="detail-hero">
     <div>
-      <p class="eyebrow">Serial analysis · Windows / macOS / Linux</p>
+      <p class="eyebrow">Serial engineering · IoT devices · Windows / macOS / Linux</p>
       <h1>Explore on-site data.<br>Keep every detail visible.</h1>
-      <p>A modern cross-platform COM tool built for serial communication,
-      live log exploration, Hex analysis, and repeatable workflows.</p>
-      <a class="button-primary" href="https://github.com/xenkuo/comng-pro" target="_blank" rel="noopener">View source</a>
+      <p>A cross-platform tool for firmware debugging, device communication,
+      Hex analysis, live logs, and repeatable on-site workflows.</p>
     </div>
     <img src="{{ '/img/apps/preview-dark.png' | relative_url }}" alt="comNG dark interface">
   </section>

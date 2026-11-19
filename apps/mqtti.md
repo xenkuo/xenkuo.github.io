@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MQTTi
-subtitle: A focused MQTT workbench for Windows
+subtitle: MQTT integration and IoT telemetry for Windows
 css:
   - "/css/apps.css"
 permalink: /apps/mqtti/
@@ -10,11 +10,10 @@ permalink: /apps/mqtti/
 <main class="detail-page">
   <section class="detail-hero">
     <div>
-      <p class="eyebrow">MQTT 3.1.1 &amp; 5.0 · Windows</p>
+      <p class="eyebrow">MQTT 3.1.1 &amp; 5.0 · IoT development · Windows</p>
       <h1>Every MQTT session,<br>one clear timeline.</h1>
-      <p>Inspect, search, edit, copy, and export live MQTT traffic with a purpose-built
-      code-editor experience.</p>
-      <a class="button-primary" href="https://github.com/xenkuo/mqtti" target="_blank" rel="noopener">View source</a>
+      <p>Debug device messages, MQTT integrations, and IoT telemetry with a
+      purpose-built code-editor timeline.</p>
     </div>
     <img src="{{ '/img/apps/dark-session.png' | relative_url }}" alt="MQTTi session timeline">
   </section>
