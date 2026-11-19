@@ -29,7 +29,7 @@ permalink: /apps/comng-pro/
 
   <section class="gallery-grid">
     <figure><img src="{{ '/img/apps/comng-pro-single-panel-hex.png' | relative_url }}" alt="comng-pro single-panel Hex view"><figcaption>Hex analysis</figcaption></figure>
-    <figure><img src="{{ '/img/apps/comng-pro-single-panel-chart.png' | relative_url }}" alt="comng-pro single-panel chart view"><figcaption>Data visualization</figcaption></figure>
+    <figure><img src="{{ '/img/apps/comng-pro-dual-panel.png' | relative_url }}" alt="comng-pro dual-panel interface"><figcaption>Dual-panel workspace</figcaption></figure>
   </section>
 
   <section class="detail-footer">
