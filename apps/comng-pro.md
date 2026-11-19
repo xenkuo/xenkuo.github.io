@@ -28,8 +28,8 @@ permalink: /apps/comng-pro/
   </section>
 
   <section class="gallery-grid">
-    <figure><img src="{{ '/img/apps/hex-mode-2.png' | relative_url }}" alt="comNG Hex mode"><figcaption>Hex analysis</figcaption></figure>
-    <figure><img src="{{ '/img/apps/chart.png' | relative_url }}" alt="comNG chart interface"><figcaption>Data visualization</figcaption></figure>
+    <figure><img src="{{ '/img/apps/comng-pro-single-panel-hex.png' | relative_url }}" alt="comng-pro single-panel Hex view"><figcaption>Hex analysis</figcaption></figure>
+    <figure><img src="{{ '/img/apps/comng-pro-single-panel-chart.png' | relative_url }}" alt="comng-pro single-panel chart view"><figcaption>Data visualization</figcaption></figure>
   </section>
 
   <section class="detail-footer">
