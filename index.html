@@ -1,21 +1,72 @@
 ---
 layout: page
-title: comNG ...
-subtitle: Next Generation of COM Tool ...
+title: Xen Tools
+subtitle: Desktop tools for engineers and power users
 use-site-title: true
+css:
+  - "/css/apps.css"
 ---
 
-<img src="./img/comNG/preview.jpg" class="center-block"">
+<main class="app-showcase">
+  <section class="showcase-hero">
+    <p class="eyebrow">Desktop applications by Xen</p>
+    <h1>Tools for the networks<br>and devices around you.</h1>
+    <p class="hero-copy">
+      Purpose-built desktop software for serial communication, MQTT work, and
+      wireless network analysis.
+    </p>
+  </section>
 
-<p>
-  comNG is a modern and powerful COM tool. Please refer to
-  <a
-    href="
-    ../2019-08-01-comNG/"
-    >Introduction</a
-  >
-  for feature details.
-</p>
-<p>
-  comNG is MIT licensed and all it's dependencies are MIT licensed.
-</p>
+  <section class="project-grid" aria-label="Featured applications">
+    <article class="project-card project-card--mqtti">
+      <a class="project-visual" href="{{ '/apps/mqtti/' | relative_url }}" aria-label="View MQTTi">
+        <img src="{{ '/img/apps/dark-session.png' | relative_url }}" alt="MQTTi desktop session">
+      </a>
+      <div class="project-card__body">
+        <p class="project-kicker">MQTT workbench · Windows</p>
+        <h2><a href="{{ '/apps/mqtti/' | relative_url }}">MQTTi</a></h2>
+        <p>Multiple MQTT sessions, an editable code timeline, flexible payload formats, and publish favorites.</p>
+        <a class="project-link" href="{{ '/apps/mqtti/' | relative_url }}">Explore MQTTi <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="project-card project-card--wifimanner">
+      <a class="project-visual wifi-mock" href="{{ '/apps/wifimanner/' | relative_url }}" aria-label="View WiFi Manner">
+        <div class="wifi-toolbar">
+          <span class="wifi-dot"></span><strong>WiFi Manner</strong>
+          <div class="wifi-tabs"><span class="active">Live Scan</span><span>Capture</span></div>
+        </div>
+        <div class="wifi-columns">
+          <div class="wifi-list">
+            <div class="wifi-row selected"><b>Living Room</b><span>-42 dBm</span></div>
+            <div class="wifi-row"><b>Studio AP</b><span>-58 dBm</span></div>
+            <div class="wifi-row"><b>Workshop</b><span>-67 dBm</span></div>
+            <div class="wifi-row"><b>Guest</b><span>-79 dBm</span></div>
+          </div>
+          <div class="wifi-chart">
+            <div class="chart-label">Channel occupancy</div>
+            <div class="chart-lines"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </a>
+      <div class="project-card__body">
+        <p class="project-kicker">Wi-Fi analysis · Windows</p>
+        <h2><a href="{{ '/apps/wifimanner/' | relative_url }}">WiFi Manner</a></h2>
+        <p>Live network scanning and offline pcapng analysis for device connections and protocol activity.</p>
+        <a class="project-link" href="{{ '/apps/wifimanner/' | relative_url }}">Explore WiFi Manner <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="project-card project-card--comng">
+      <a class="project-visual" href="{{ '/apps/comng-pro/' | relative_url }}" aria-label="View comNG">
+        <img src="{{ '/img/apps/preview-dark.png' | relative_url }}" alt="comNG serial communication interface">
+      </a>
+      <div class="project-card__body">
+        <p class="project-kicker">Serial analysis · Windows / macOS / Linux</p>
+        <h2><a href="{{ '/apps/comng-pro/' | relative_url }}">comNG</a></h2>
+        <p>A modern serial tool for tabs, Hex mode, syntax highlighting, charts, logs, and on-site data exploration.</p>
+        <a class="project-link" href="{{ '/apps/comng-pro/' | relative_url }}">Explore comNG <span>→</span></a>
+      </div>
+    </article>
+  </section>
+</main>

@@ -4,7 +4,7 @@
 title: Xen Tools
 
 # Short description of your site
-description: comNG ...
+description: Desktop tools for engineers and power users
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,11 +20,10 @@ description: comNG ...
 
 # List of links in the navigation bar
 navbar-links:
-  comNG:
-    - Introduction: "2019-08-01-comNG"
-    - comNGLang: "2019-08-03-comNGLang"
-  Highlight 7:
-    - Introduction: "2019-01-01-Highlight-7"
+  Applications:
+    - MQTTi: "apps/mqtti"
+    - WiFi Manner: "apps/wifimanner"
+    - comNG: "apps/comng-pro"
   Donation: "2020-01-01-donation"
   About Me: "aboutme"
 
