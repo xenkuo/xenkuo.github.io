@@ -13,7 +13,7 @@ permalink: /apps/comng-pro/
       <p>A cross-platform tool for firmware debugging, device communication,
       Hex analysis, live logs, and repeatable on-site workflows.</p>
     </div>
-    <img src="{{ '/img/apps/preview-dark.png' | relative_url }}" alt="comng-pro dark interface">
+    <img src="{{ '/img/apps/comng-pro-single-panel.png' | relative_url }}" alt="comng-pro single-panel interface">
   </section>
 
   <section class="feature-section">
