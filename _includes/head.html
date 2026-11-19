@@ -50,7 +50,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="{{ '/css/apps.css' | relative_url }}?v=3" />
+  <link rel="stylesheet" href="{{ '/css/apps.css' | relative_url }}?v=4" />
+  <style>
+    html,
+    body,
+    .container[role="main"],
+    .container[role="main"] .row,
+    .main-content {
+      background: #090d14 !important;
+      color: #dfe6f3 !important;
+    }
+    body,
+    h1, h2, h3, h4, h5, h6,
+    .navbar-custom,
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav li a {
+      font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif !important;
+    }
+  </style>
 
   {% if page.googlefonts %}
     {% for font in page.googlefonts %}
