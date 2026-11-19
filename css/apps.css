@@ -383,108 +383,6 @@ h1, h2, h3, h4, h5, h6,
   color: var(--accent);
 }
 
-.wifi-mock {
-  color: #dbe5ff;
-  background: linear-gradient(145deg, #172233, #0d131d);
-  font-family: Inter, "Segoe UI Variable", "Segoe UI", sans-serif;
-}
-
-.wifi-toolbar {
-  display: flex;
-  align-items: center;
-  height: 58px;
-  padding: 0 18px;
-  border-bottom: 1px solid var(--line);
-}
-
-.wifi-dot {
-  width: 8px;
-  height: 8px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background: #77aef3;
-  box-shadow: 0 0 12px rgba(119,174,243,.8);
-}
-
-.wifi-toolbar strong {
-  color: #dfe7f4 !important;
-  font-size: 12px;
-}
-
-.wifi-tabs {
-  display: flex;
-  gap: 16px;
-  margin-left: auto;
-  color: #7f8da1;
-  font-size: 10px;
-}
-
-.wifi-tabs .active {
-  color: #dfe7f4;
-}
-
-.wifi-columns {
-  display: grid;
-  grid-template-columns: 42% 58%;
-  height: calc(100% - 58px);
-}
-
-.wifi-list {
-  padding: 16px 10px;
-  border-right: 1px solid var(--line);
-}
-
-.wifi-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 0;
-  padding: 12px;
-  border-radius: 7px;
-  color: #bdc7da !important;
-  font-size: 11px;
-}
-
-.wifi-row b,
-.wifi-row span {
-  color: inherit !important;
-}
-
-.wifi-row.selected {
-  background: var(--accent-soft);
-  color: #edf5ff !important;
-}
-
-.wifi-chart {
-  position: relative;
-  margin: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size: 22px 22px;
-}
-
-.chart-label {
-  padding: 12px;
-  color: #8d99ac !important;
-  font-size: 10px;
-}
-
-.chart-lines i {
-  position: absolute;
-  left: 8%;
-  height: 3px;
-  border-radius: 3px;
-  background: #69a5ff;
-  box-shadow: 0 0 10px rgba(105,165,255,.55);
-}
-.chart-lines i:nth-child(1) { top: 27%; width: 78%; }
-.chart-lines i:nth-child(2) { top: 42%; left: 24%; width: 55%; background: #b38cff; }
-.chart-lines i:nth-child(3) { top: 58%; width: 38%; background: #67d3bd; }
-.chart-lines i:nth-child(4) { top: 72%; left: 35%; width: 60%; background: #f1bc67; }
-.chart-lines i:nth-child(5) { top: 84%; width: 25%; background: #ef7e9a; }
-
 .detail-hero {
   display: grid;
   grid-template-columns: 39% 61%;
@@ -570,18 +468,25 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .gallery-grid figure {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
   margin: 0;
 }
 
 .gallery-grid img {
+  display: block;
   width: 100%;
+  height: clamp(220px, 31vw, 360px);
+  object-fit: contain;
+  background: #0a0f16;
   border: 1px solid var(--line);
   border-radius: 11px;
   box-shadow: 0 20px 60px rgba(0,0,0,.28);
 }
 
 .gallery-grid figcaption {
-  padding-top: 12px;
+  margin-top: 12px;
   color: var(--muted) !important;
   font-size: 11px;
   font-weight: 700;
@@ -600,52 +505,6 @@ h1, h2, h3, h4, h5, h6,
   font-size: 17px;
   line-height: 1.75;
 }
-
-.wifi-detail-mock {
-  height: 420px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  color: #dbe5ff;
-  background: var(--surface);
-  box-shadow: 0 28px 80px rgba(0,0,0,.38);
-  font-family: Inter, "Segoe UI Variable", "Segoe UI", sans-serif;
-}
-
-.wifi-detail-chart {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  height: calc(100% - 58px);
-  padding: 20px;
-}
-
-.timeline-y {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  color: #8d99ac;
-  font-size: 10px;
-}
-
-.timeline-x {
-  position: relative;
-  border-left: 1px solid var(--line);
-  background:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size: 100% 20%, 35px 100%;
-}
-
-.timeline-x i {
-  position: absolute;
-  height: 4px;
-  border-radius: 4px;
-  box-shadow: 0 0 8px currentColor;
-}
-.line-a { top: 11%; left: 5%; width: 78%; color: #69a5ff; background: #69a5ff; }
-.line-b { top: 28%; left: 18%; width: 56%; color: #b38cff; background: #b38cff; }
-.line-c { top: 44%; left: 34%; width: 44%; color: #67d3bd; background: #67d3bd; }
-.line-d { top: 61%; left: 47%; width: 38%; color: #f1bc67; background: #f1bc67; }
-.line-e { top: 78%; left: 11%; width: 72%; color: #ef7e9a; background: #ef7e9a; }
 
 .beautiful-jekyll-footer {
   position: relative;

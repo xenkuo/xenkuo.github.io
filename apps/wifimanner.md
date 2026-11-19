@@ -14,15 +14,7 @@ permalink: /apps/wifimanner/
       network activity, connection lifecycles, and protocol timelines offline.</p>
       <a class="store-button" href="https://apps.microsoft.com/detail/9NBT5F55QT68" target="_blank" rel="noopener noreferrer">Get it from Microsoft Store <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="wifi-detail-mock">
-      <div class="wifi-toolbar"><span class="wifi-dot"></span><strong>WiFi Manner</strong></div>
-      <div class="wifi-detail-chart">
-        <div class="timeline-y"><span>Beacon</span><span>Probe</span><span>Auth</span><span>EAPOL</span><span>TCP</span><span>DNS</span></div>
-        <div class="timeline-x">
-          <i class="line-a"></i><i class="line-b"></i><i class="line-c"></i><i class="line-d"></i><i class="line-e"></i>
-        </div>
-      </div>
-    </div>
+    <img src="{{ '/img/apps/wifimanner-live-scan.png' | relative_url }}" alt="WiFi Manner live Wi-Fi scan">
   </section>
 
   <section class="feature-section">
@@ -33,6 +25,11 @@ permalink: /apps/wifimanner/
       <div><strong>Connection lifecycle</strong><p>Follow probe, authentication, association, EAPOL handshake, and subsequent traffic.</p></div>
       <div><strong>Protocol timeline</strong><p>Trace packet activity across 802.11 and application protocol layers.</p></div>
     </div>
+  </section>
+
+  <section class="gallery-grid wifi-gallery" aria-label="WiFi Manner screenshots">
+    <figure><img src="{{ '/img/apps/wifimanner-airtime.png' | relative_url }}" alt="WiFi Manner airtime analysis"><figcaption>Capture airtime analysis</figcaption></figure>
+    <figure><img src="{{ '/img/apps/wifimanner-connection.png' | relative_url }}" alt="WiFi Manner connection analysis"><figcaption>Device connection analysis</figcaption></figure>
   </section>
 
   <section class="detail-footer">
