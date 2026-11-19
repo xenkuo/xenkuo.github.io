@@ -63,7 +63,7 @@ faqs:
   </section>
 
   <section class="gallery-grid">
-    <figure><img src="{{ '/img/apps/dark-connections.png' | relative_url }}" alt="MQTTi connection manager"><figcaption>Connections</figcaption></figure>
+    <figure><img src="{{ '/img/apps/mqtti-overview.png' | relative_url }}" alt="MQTTi dual-view session overview"><figcaption>Dual-session view</figcaption></figure>
     <figure><img src="{{ '/img/apps/light-session.png' | relative_url }}" alt="MQTTi in light mode"><figcaption>Light interface</figcaption></figure>
   </section>
 
