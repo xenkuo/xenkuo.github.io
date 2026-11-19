@@ -2,8 +2,6 @@
 layout: page
 title: comNG
 subtitle: Serial debugging for embedded and industrial systems
-css:
-  - "/css/apps.css"
 permalink: /apps/comng-pro/
 ---
 

@@ -2,8 +2,6 @@
 layout: page
 title: WiFi Manner
 subtitle: Wireless validation for IoT and embedded products
-css:
-  - "/css/apps.css"
 permalink: /apps/wifimanner/
 ---
 

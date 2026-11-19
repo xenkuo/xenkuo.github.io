@@ -2,8 +2,6 @@
 layout: page
 title: MQTTi
 subtitle: MQTT integration and IoT telemetry for Windows
-css:
-  - "/css/apps.css"
 permalink: /apps/mqtti/
 ---
 

@@ -2,10 +2,12 @@
   color-scheme: dark;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght400;500;600;700;800&display=swap");
+
 body {
   font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif !important;
   background: #090d14 !important;
-  color: #dfe6f3;
+  color: #dfe6f3 !important;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -14,8 +16,12 @@ h1, h2, h3, h4, h5, h6,
 .navbar-custom,
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif !important;
 }
+
+.header-section { display: none !important; }
+.main-content { padding-top: 90px !important; }
+.container[role="main"] { background: transparent; }
 
 .navbar-custom {
   background: rgba(9, 13, 20, .94) !important;
@@ -37,6 +43,21 @@ h1, h2, h3, h4, h5, h6,
   border-top: 1px solid #1c2634;
   color: #8b99ad;
   background: #090d14;
+}
+
+.text-muted,
+.copyright,
+.theme-by {
+  color: #7f8ba0 !important;
+}
+
+.navbar-custom .navlinks-children {
+  background: #101720;
+  border: 1px solid #202c3b;
+}
+
+.navbar-custom .navlinks-children a {
+  color: #dfe6f3 !important;
 }
 
 .app-showcase,
