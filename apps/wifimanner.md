@@ -12,6 +12,7 @@ permalink: /apps/wifimanner/
       <h1>See the connection.<br>Understand the traffic.</h1>
       <p>Validate embedded Wi-Fi devices in real time and analyze captured
       network activity, connection lifecycles, and protocol timelines offline.</p>
+      <a class="store-button" href="https://apps.microsoft.com/detail/9NBT5F55QT68" target="_blank" rel="noopener noreferrer">Get it from Microsoft Store <span aria-hidden="true">↗</span></a>
     </div>
     <div class="wifi-detail-mock">
       <div class="wifi-toolbar"><span class="wifi-dot"></span><strong>WiFi Manner</strong></div>

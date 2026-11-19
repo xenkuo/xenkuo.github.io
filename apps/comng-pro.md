@@ -12,6 +12,7 @@ permalink: /apps/comng-pro/
       <h1>Explore on-site data.<br>Keep every detail visible.</h1>
       <p>A cross-platform tool for firmware debugging, device communication,
       Hex analysis, live logs, and repeatable on-site workflows.</p>
+      <a class="store-button" href="https://apps.microsoft.com/detail/9PFHJR0XMQSR" target="_blank" rel="noopener noreferrer">Get it from Microsoft Store <span aria-hidden="true">↗</span></a>
     </div>
     <img src="{{ '/img/apps/comng-pro-single-panel.png' | relative_url }}" alt="comng-pro single-panel interface">
   </section>

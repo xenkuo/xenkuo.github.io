@@ -12,6 +12,7 @@ permalink: /apps/mqtti/
       <h1>Every MQTT session,<br>one clear timeline.</h1>
       <p>Debug device messages, MQTT integrations, and IoT telemetry with a
       purpose-built code-editor timeline.</p>
+      <a class="store-button" href="https://apps.microsoft.com/detail/9MW8721JW63G" target="_blank" rel="noopener noreferrer">Get it from Microsoft Store <span aria-hidden="true">↗</span></a>
     </div>
     <img src="{{ '/img/apps/dark-session.png' | relative_url }}" alt="MQTTi session timeline">
   </section>
