@@ -568,9 +568,21 @@ h1, h2, h3, h4, h5, h6,
 .line-e { top: 78%; left: 11%; width: 72%; color: #ef7e9a; background: #ef7e9a; }
 
 .beautiful-jekyll-footer {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
+  margin-left: -50vw;
+  box-sizing: border-box;
   border-top: 1px solid var(--line);
   background: var(--canvas) !important;
   color: var(--muted);
+}
+
+.beautiful-jekyll-footer > .row {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: var(--canvas);
 }
 
 .beautiful-jekyll-footer .text-muted,
