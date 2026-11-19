@@ -2,8 +2,6 @@
   color-scheme: dark;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght400;500;600;700;800&display=swap");
-
 body {
   font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif !important;
   background: #090d14 !important;
@@ -37,6 +35,37 @@ h1, h2, h3, h4, h5, h6,
 .navbar-custom .nav li a:hover,
 .navbar-custom .navbar-brand:hover {
   color: #62a7ff !important;
+}
+
+.industry-page,
+.industry-page html,
+html:has(.industry-page),
+.industry-page .container,
+.industry-page .row,
+.industry-page .main-content,
+.industry-page .container[role="main"] {
+  background: #090d14 !important;
+  color: #dfe6f3 !important;
+}
+
+.industry-page p,
+.industry-page li,
+.industry-page figcaption {
+  color: #9aa7ba;
+}
+
+.industry-page h1,
+.industry-page h2,
+.industry-page h3,
+.industry-page h4,
+.industry-page h5,
+.industry-page h6,
+.industry-page strong {
+  color: #f3f6fb !important;
+}
+
+.industry-page a {
+  color: #72a9ef;
 }
 
 .beautiful-jekyll-footer {
