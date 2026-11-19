@@ -23,7 +23,7 @@ navbar-links:
   Applications:
     - MQTTi: "apps/mqtti"
     - WiFi Manner: "apps/wifimanner"
-    - comNG: "apps/comng-pro"
+    - comng-pro: "apps/comng-pro"
   Donation: "2020-01-01-donation"
   About Me: "aboutme"
 

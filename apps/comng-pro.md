@@ -1,6 +1,6 @@
 ---
 layout: page
-title: comNG
+title: comng-pro
 subtitle: Serial debugging for embedded and industrial systems
 permalink: /apps/comng-pro/
 ---
@@ -13,7 +13,7 @@ permalink: /apps/comng-pro/
       <p>A cross-platform tool for firmware debugging, device communication,
       Hex analysis, live logs, and repeatable on-site workflows.</p>
     </div>
-    <img src="{{ '/img/apps/preview-dark.png' | relative_url }}" alt="comNG dark interface">
+    <img src="{{ '/img/apps/preview-dark.png' | relative_url }}" alt="comng-pro dark interface">
   </section>
 
   <section class="feature-section">

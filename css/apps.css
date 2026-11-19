@@ -460,13 +460,13 @@ h1, h2, h3, h4, h5, h6,
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: 11px;
-  background: rgba(17,25,35,.72);
+  background: #111923 !important;
   transition: border-color .2s ease, background .2s ease;
 }
 
 .feature-grid div:hover {
   border-color: var(--line-strong);
-  background: var(--surface-2);
+  background: #151e29 !important;
 }
 
 .feature-grid strong {
@@ -569,10 +569,9 @@ h1, h2, h3, h4, h5, h6,
 
 .beautiful-jekyll-footer {
   position: relative;
-  left: 50%;
   width: 100vw;
   max-width: none;
-  margin-left: -50vw;
+  margin: 0 calc(50% - 50vw) !important;
   box-sizing: border-box;
   border-top: 1px solid var(--line);
   background: var(--canvas) !important;
@@ -583,6 +582,39 @@ h1, h2, h3, h4, h5, h6,
   max-width: 1180px;
   margin: 0 auto;
   background: var(--canvas);
+}
+
+.industry-page footer {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) !important;
+  border: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  padding: 28px 0 32px !important;
+  background: var(--canvas) !important;
+  box-shadow: 0 0 0 100vmax var(--canvas);
+  clip-path: inset(0 -100vmax);
+}
+
+.industry-page footer .beautiful-jekyll-footer {
+  width: 100%;
+  margin: 0 auto !important;
+  padding: 0;
+  border: 0;
+  background: var(--canvas) !important;
+}
+
+.industry-page footer .row {
+  width: min(1180px, calc(100% - 48px));
+  max-width: none;
+  margin: 0 auto;
+  background: var(--canvas) !important;
+}
+
+.industry-page footer [class*="col-"] {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: none;
 }
 
 .beautiful-jekyll-footer .text-muted,
