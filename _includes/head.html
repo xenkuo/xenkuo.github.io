@@ -3,13 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }} {{ site.title-separator }} {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
 
-  {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
-  {% endif %}
+  <meta name="description" content="{{ page.meta-description | default: page.subtitle | default: site.description | strip_html | xml_escape }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
@@ -50,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="{{ '/css/apps.css' | relative_url }}?v=11" />
+  <link rel="stylesheet" href="{{ '/css/apps.css' | relative_url }}?v=12" />
   <style>
     html,
     body,
@@ -80,6 +79,86 @@
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
   {% endif %}
 
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://xenkuo.github.io/#organization",
+        "name": {{ site.title | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "url": "https://xenkuo.github.io/",
+        "logo": {{ site.avatar | absolute_url | jsonify }},
+        "sameAs": ["https://github.com/xenkuo"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://xenkuo.github.io/#website",
+        "name": {{ site.title | jsonify }},
+        "url": "https://xenkuo.github.io/",
+        "publisher": { "@id": "https://xenkuo.github.io/#organization" }
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+
+  {% if page.software_application %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": {{ page.software_application.name | jsonify }},
+    "description": {{ page.meta-description | default: page.subtitle | jsonify }},
+    "applicationCategory": {{ page.software_application.category | jsonify }},
+    "operatingSystem": {{ page.software_application.operating_system | jsonify }},
+    "image": {{ page.share-img | jsonify }},
+    "screenshot": {{ page.software_application.screenshots | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "downloadUrl": {{ page.software_application.store_url | jsonify }},
+    "isAccessibleForFree": true,
+    "featureList": {{ page.software_application.features | jsonify }},
+    {% if page.software_application.languages %}
+    "inLanguage": {{ page.software_application.languages | jsonify }},
+    {% endif %}
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://xenkuo.github.io/#organization"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": {{ page.software_application.store_url | jsonify }}
+    }
+  }
+  </script>
+  {% endif %}
+
+  {% if page.faqs %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for item in page.faqs %}
+      {
+        "@type": "Question",
+        "name": {{ item.question | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ item.answer | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+
   {% if page.meta-title %}
   <meta property="og:title" content="{{ page.meta-title }}" />
   {% elsif page.title %}
@@ -96,7 +175,7 @@
   <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
   {% endif %}
 
-
+  <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:type" content="website" />
 
   {% if page.id %}
@@ -109,15 +188,20 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
+  {% if page.share-img-alt %}
+  <meta property="og:image:alt" content="{{ page.share-img-alt | xml_escape }}" />
+  {% endif %}
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
 
 
   <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="{% if page.share-img %}summary_large_image{% else %}summary{% endif %}" />
+  {% if site.author.twitter %}
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+  {% endif %}
 
   {% if page.meta-title %}
   <meta name="twitter:title" content="{{ page.meta-title }}" />
@@ -137,6 +221,9 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
+  {% if page.share-img-alt %}
+  <meta name="twitter:image:alt" content="{{ page.share-img-alt | xml_escape }}" />
+  {% endif %}
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}

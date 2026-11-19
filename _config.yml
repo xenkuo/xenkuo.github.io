@@ -4,7 +4,7 @@
 title: Xenkuo Industry
 
 # Short description of your site
-description: Engineering tools for IoT and embedded developers
+description: "Windows tools for IoT and embedded developers: serial debugging, Wi-Fi analysis, and MQTT client software."
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -22,8 +22,8 @@ description: Engineering tools for IoT and embedded developers
 navbar-links:
   Applications:
     - MQTTi: "apps/mqtti"
-    - WiFi Manner: "apps/wifimanner"
-    - comng-pro: "apps/comng-pro"
+    - Wi-Fi Manner: "apps/wifimanner"
+    - comNG Pro: "apps/comng-pro"
   Donation: "2020-01-01-donation"
   About Me: "aboutme"
 
