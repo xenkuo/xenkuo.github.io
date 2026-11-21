@@ -46,6 +46,12 @@
           Theme by
           <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
         </p>
+        {% if page.url == "/" or page.url contains "/apps/" %}
+        <p class="design-credit">
+          Interface refinement with <a href="https://github.com/heydamir/unslop" target="_blank" rel="noopener">unslop</a>
+          by Damir Sokolovsky, CC BY 4.0
+        </p>
+        {% endif %}
       </div>
     </div>
   </div>
