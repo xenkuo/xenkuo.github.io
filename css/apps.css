@@ -25,14 +25,74 @@ body,
   color: var(--text) !important;
 }
 
+html,
 body,
+.industry-page,
+.industry-page p,
+.industry-page li,
+.industry-page figcaption,
+.industry-page a,
+.industry-page strong,
 h1, h2, h3, h4, h5, h6,
 .navbar-custom,
 .navbar-custom .navbar-brand,
-.navbar-custom .nav li a {
-  font-family: Inter, "Segoe UI Variable", "Segoe UI", Arial, sans-serif !important;
+.navbar-custom .nav li a,
+.beautiful-jekyll-footer,
+.beautiful-jekyll-footer p {
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.industry-page p,
+.industry-page li,
+.industry-page figcaption,
+.industry-page .hero-copy,
+.industry-page .project-card__body p,
+.industry-page .detail-hero p:not(.eyebrow),
+.industry-page .feature-grid p,
+.industry-page .detail-footer p,
+.industry-page .faq-list details p {
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.industry-page .eyebrow,
+.industry-page .project-kicker,
+.industry-page .gallery-grid figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.industry-page h1 {
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 1.02;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.industry-page h2 {
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.industry-page h3,
+.industry-page strong {
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .industry-page .header-section {
@@ -86,8 +146,8 @@ h1, h2, h3, h4, h5, h6,
 .navbar-custom .nav li a {
   color: var(--text-2) !important;
   font-size: 13px;
-  font-weight: 650;
-  letter-spacing: -.1px;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .navbar-custom .navbar-brand {
@@ -95,7 +155,7 @@ h1, h2, h3, h4, h5, h6,
   padding: 24px 15px 24px 0;
   color: var(--text) !important;
   font-size: 15px;
-  letter-spacing: -.25px;
+  letter-spacing: 0;
 }
 
 .navbar-custom .nav li a {
