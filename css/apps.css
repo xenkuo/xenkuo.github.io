@@ -190,6 +190,24 @@ body {
   background: var(--surface-2);
 }
 
+.navbar-custom .navlinks-parent {
+  height: 64px;
+  padding: 20px 14px;
+  border: 0;
+  background: transparent;
+  color: var(--text-2);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
+    display: block;
+  }
+}
+
 .industry-page p,
 .industry-page li,
 .industry-page figcaption {

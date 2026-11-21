@@ -27,14 +27,31 @@ var main = {
 
     // On mobile, when clicking on a multi-level navbar menu, show the child links
     $('#main-navbar').on("click", ".navlinks-parent", function(e) {
-      var target = e.target;
-      $.each($(".navlinks-parent"), function(key, value) {
-        if (value == target) {
-          $(value).parent().toggleClass("show-children");
-        } else {
-          $(value).parent().removeClass("show-children");
-        }
-      });
+      e.preventDefault();
+      var container = $(this).closest(".navlinks-container");
+      var shouldOpen = !container.hasClass("show-children");
+
+      $(".navlinks-container").removeClass("show-children");
+      $(".navlinks-parent").attr("aria-expanded", "false");
+
+      if (shouldOpen) {
+        container.addClass("show-children");
+        $(this).attr("aria-expanded", "true");
+      }
+    });
+
+    $(document).on("click", function(e) {
+      if (!$(e.target).closest(".navlinks-container").length) {
+        $(".navlinks-container").removeClass("show-children");
+        $(".navlinks-parent").attr("aria-expanded", "false");
+      }
+    });
+
+    $(document).on("keydown", function(e) {
+      if (e.key === "Escape") {
+        $(".navlinks-container").removeClass("show-children");
+        $(".navlinks-parent").attr("aria-expanded", "false").trigger("blur");
+      }
     });
 
     // Ensure nested navbar menus are not longer than the menu header
